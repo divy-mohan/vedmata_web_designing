@@ -1,0 +1,226 @@
+/* Dark Mode & Modern UI - Tailwind Inspired */
+:root {
+    --primary-color: #0f0f0f;
+    --secondary-color: #1a1a2e;
+    --text-color: #e0e0e0;
+    --accent-color: #ff007f;
+    --btn-hover: #8a2be2;
+    --border-radius: 12px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--primary-color); */
+    background-image: url('/static/images/web_bg.jpg');
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.vedmata-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.vedmata-list {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vedmata-list li {
+    background: var(--secondary-color);
+    padding: 15px;
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.vedmata-list li:hover {
+    background: var(--btn-hover);
+    transform: translateY(-3px);
+}
+
+.vedmata-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: var(--accent-color);
+    border: none;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.vedmata-btn:hover {
+    background: var(--btn-hover);
+    transform: scale(1.1);
+}
+
+.vedmata-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: var(--secondary-color);
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.vedmata-form label {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.vedmata-form input, .vedmata-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.vedmata-form button {
+    padding: 14px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.vedmata-form button:hover {
+    background: var(--btn-hover);
+    transform: translateY(-2px);
+}
+
+
+.faq-section {
+  background-color: #f3f4f600;
+  padding: 2.5rem 0;
+}
+
+.faq-container {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fffefe00;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dbd8d8;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid #d1d5db;
+  padding: 0.75rem 0;
+}
+
+.faq-title {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.faq-title:hover {
+  background-color: #8702af;
+  color: rgb(255, 255, 255);
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  background-color: #f7efffb0;
+  color: black;
+  padding: 0 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.faq-toggle:checked + .faq-title + .faq-content {
+  max-height: 24rem;
+  padding: 1rem;
+}
+
+.hr-line {
+  border: 0;
+  height: 1px;
+  background-color: #d1d5db;
+  margin: 0rem 0;
+  margin-bottom: 3%;
+}
