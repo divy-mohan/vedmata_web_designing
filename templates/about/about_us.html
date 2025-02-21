@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Vedmata Web Designing | IITian-Driven Web & Graphic Design{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+{% endblock %}
+{% block extra_head %}
+    <meta name="description" content="Learn more about Vedmata Web Designing, a one-stop solution for all your graphic design and web development needs. Built by IITians, we deliver excellence in every project.">
+    <meta name="keywords" content="Web Development Company, Graphic Design Experts, IIT Web Design, Professional Web Design India">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ request.build_absolute_uri }}" />
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Vedmata Web Designing | IITian-Driven Web & Graphic Design">
+    <meta property="og:description" content="Vedmata Web Designing is an IITian-driven company offering top-notch web development and graphic design solutions.">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:image" content="{% static 'images/about-us.jpg' %}">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Vedmata Web Designing | IITian-Driven Web & Graphic Design">
+    <meta name="twitter:description" content="Learn about Vedmata Web Designing, a premier web and graphic design company built by IITians.">
+    <meta name="twitter:image" content="{% static 'images/about-us.jpg' %}">
+    <meta name="twitter:site" content="@VedmataDesigns">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Vedmata Web Designing",
+      "url": "https://www.vedmata.com",
+      "logo": "https://www.vedmata.com/static/images/logo.png",
+      "description": "Vedmata Web Designing is an IITian-led company specializing in web development and graphic design solutions.",
+      "sameAs": [
+        "https://www.facebook.com/VedmataDesigns",
+        "https://twitter.com/VedmataDesigns",
+        "https://www.linkedin.com/company/vedmata-designs"
+      ]
+    }
+    </script>
+{% endblock %}
+
+{% block c1 %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Who We Are</h1>
+    <p class="lead text-center">Welcome to <strong>Vedmata Web Designing</strong>, where creativity meets technology to bring your vision to life.</p>
+
+    <div class="row my-5">
+        <div class="team-box">
+            <div class="team-content">
+                <img src="{% static 'images/TEAM (2).jpg' %}" alt="Abdelrahman Atef">
+                <h2>Vedmata Web Designing <br><hr><span>Your Success My Happiness</span></br></h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Our Mission: Excellence in Every Pixel</h2>
+            <p>At <strong>Vedmata Web Designing</strong>, we believe that a well-designed website is more than just aesthetics—it's about functionality, user experience, and brand impact. Our mission is to provide businesses with <strong>custom-tailored web development and graphic design solutions</strong> that not only look good but also drive results.</p>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}
+
+
+
+{% block c2 %}
+<div class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Why Choose Us?</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <p class="card-title">🚀 IITian Expertise</p>
+                <p class="small-desc">With an IIT background, we bring a unique blend of <strong>technical excellence and creative innovation</strong>.</p>
+                <div class="go-corner">
+                    <div class="go-arrow">→</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <p class="card-title">🎨 Full-Service Agency</p>
+                <p class="small-desc">From <strong>website development</strong> to <strong>graphic design</strong>, we handle everything under one roof.</p>
+                <div class="go-corner">
+                    <div class="go-arrow">→</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <p class="card-title">📈 SEO Rich Websites</p>
+                <p class="small-desc">We build websites that are <strong>visually appealing & SEO-friendly</strong> to help you rank higher.</p>
+                <div class="go-corner">
+                    <div class="go-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block c3 %}
+<div class="container my-5 fade-in">
+    <h2 class="text-center mb-4">Meet Our Founder</h2>
+    <div class="row align-items-center">
+        {% comment %} <div class="col-md-4">
+            <img src="{% static 'images/divy-mohan.jpg' %}" class="img-fluid rounded-circle shadow-lg" alt="Divy Mohan - Founder of Vedmata Web Designing">
+        </div> {% endcomment %}
+        <div class="col-md-8">
+            <p class="lead">At the heart of <strong>Vedmata Web Designing</strong> is <strong>Divy Mohan</strong>, an <strong>IIT alumnus</strong> with a passion for blending <strong>technology and creativity</strong>. His expertise in <strong>web development, UI/UX, branding, and SEO</strong> makes Vedmata a powerhouse of innovation.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block c4 %}
+<div class="container text-center mt-5 mb-5 fade-in">
+    <h2>Let’s Build Something Amazing!</h2>
+    <p>Looking for a <strong>professional web design company in India</strong>? Need <strong>top-notch graphic design services</strong>? <br>At <strong>Vedmata Web Designing</strong>, we are ready to take your brand to the next level.</p>
+    <a href="/contact" class="btn btn-primary btn-lg mt-3">📩 Get in Touch</a>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let elements = document.querySelectorAll(".fade-in");
+            function checkVisibility() {
+                elements.forEach((el, index) => {
+                    let position = el.getBoundingClientRect().top;
+                    if (position < window.innerHeight - 100) {
+                        setTimeout(() => {
+                            el.classList.add("visible");
+                        }, index * 200); // Delay each image by 200ms
+                    }
+                });
+            }
+            window.addEventListener("scroll", checkVisibility);
+            checkVisibility();
+        });
+
+
+
+        
+    </script>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-heading">Frequently Asked Questions (FAQs)</h2>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq1" class="faq-toggle">
+                <label for="faq1" class="faq-title">1. What is Vedmata Web Designing?</label>
+                <div class="faq-content">Vedmata Web Designing is a full-service web development and graphic design agency led by IIT alumni. We specialize in custom websites, branding, UI/UX design, and SEO solutions, helping businesses establish a strong online presence.</div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq2" class="faq-toggle">
+                <label for="faq2" class="faq-title">2. Who is the founder of Vedmata Web Designing?</label>
+                <div class="faq-content">Our founder, Divy Mohan, is an IIT alumnus with expertise in web development, branding, and digital marketing. His vision is to create innovative and functional designs that help businesses grow.</div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq3" class="faq-toggle">
+                <label for="faq3" class="faq-title">3. What services does Vedmata Web Designing offer?</label>
+                <div class="faq-content">
+                    ✅ Custom Web Development – Corporate sites, portfolios, blogs<br>
+                    ✅ E-commerce Development – Shopify, WooCommerce, and custom solutions<br>
+                    ✅ Graphic Design – Logos, branding kits, social media graphics<br>
+                    ✅ UI/UX Design – User-friendly and visually appealing interfaces<br>
+                    ✅ SEO Services – Optimizing websites for higher Google rankings
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq4" class="faq-toggle">
+                <label for="faq4" class="faq-title">4. Why choose Vedmata Web Designing?</label>
+                <div class="faq-content">
+                    ✔️ IITian Expertise – Our team blends technical excellence with creativity<br>
+                    ✔️ Full-Service Agency – We handle web development, design, and SEO under one roof<br>
+                    ✔️ SEO-Optimized Websites – We build sites that rank higher on search engines<br>
+                    ✔️ Client-Focused Approach – We tailor every project to meet unique business needs
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq5" class="faq-toggle">
+                <label for="faq5" class="faq-title">5. What industries does Vedmata Web Designing work with?</label>
+                <div class="faq-content">
+                    🏢 Corporate & Professional Services<br>
+                    🛍️ E-commerce & Retail<br>
+                    🎨 Creative & Design Agencies<br>
+                    🏥 Healthcare & Wellness<br>
+                    📚 Education & E-learning
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq6" class="faq-toggle">
+                <label for="faq6" class="faq-title">6. Does Vedmata Web Designing offer SEO services?</label>
+                <div class="faq-content">
+                    Yes! Our websites are SEO-friendly by design, and we also provide dedicated SEO services including:<br>
+                    🔹 Keyword Research & Content Optimization<br>
+                    🔹 Technical SEO (site speed, mobile-friendliness)<br>
+                    🔹 Link Building & Local SEO
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq7" class="faq-toggle">
+                <label for="faq7" class="faq-title">7. Can I hire Vedmata Web Designing for a custom project?</label>
+                <div class="faq-content">Absolutely! We offer custom web development and design services tailored to your business needs. Contact us for a free consultation to discuss your project.</div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq8" class="faq-toggle">
+                <label for="faq8" class="faq-title">8. Where is Vedmata Web Designing located?</label>
+                <div class="faq-content">We are based in India and serve clients globally, offering remote consultations and digital solutions for businesses worldwide.</div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq9" class="faq-toggle">
+                <label for="faq9" class="faq-title">9. How can I contact Vedmata Web Designing?</label>
+                <div class="faq-content">
+                    📞 Phone: +91-9506933715<br>
+                    📧 Email: vedmatawebdesigning@gmail.com<br>
+                    🌍 Website: Vedmata Web Designing
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq10" class="faq-toggle">
+                <label for="faq10" class="faq-title">10. How can I get started with Vedmata Web Designing?</label>
+                <div class="faq-content">Getting started is easy! Visit our Contact Us page, fill out the form, and we’ll get back to you within 24-48 hours.</div>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

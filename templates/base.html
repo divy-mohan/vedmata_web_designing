@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vedmata Web Designing offers custom websites, branding, logo design, SEO, and digital marketing solutions. Start your journey with a professional web design today!">
+    <meta name="keywords" content="Web Design, Graphic Design, SEO Services, Website Development, Branding, Social Media Graphics">
+    <meta name="author" content="Vedmata Web Designing">
+    {% load static %}
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="rating" content="General">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Vedmata Web Designing",
+        "url": "https://vedmatawebdesigning.com",
+        "logo": "https://vedmatawebdesigning.com/static/images/logo.png",
+        "description": "Vedmata Web Designing provides professional web development, graphic design, and digital marketing services.",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hazratganj",
+        "addressLocality": "Lucknow",
+        "addressRegion": "UP",
+        "postalCode": "226020",
+        "addressCountry": "IN"
+        },
+        "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9506933715",
+        "contactType": "Customer Service"
+        },
+        "sameAs": [
+        "https://www.facebook.com/VedmataWebDesigning",
+        "https://www.linkedin.com/company/vedmatawebdesigning",
+        "https://twitter.com/VedmataWebDesigning"
+        ]
+    }
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/darkmode.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="{% static 'images/favicon.jpeg' %}" type="image/x-icon">
+    <link rel="canonical" href="{{ request.build_absolute_uri }}" />
+
+    {% block css %}
+    {% endblock %}
+
+    <!-- SEO Open Graph Tags -->
+    <meta property="og:title" content="Vedmata Web Designing - Custom Websites & Graphic Solutions">
+    <meta property="og:description" content="One-stop solution for web development, graphic design, and digital marketing services.">
+    <meta property="og:image" content="{% static 'images/seo-image.jpg' %}">
+    <meta property="og:url" content="https://vedmatawebdesigning.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body data-theme="dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Vedmata Web Designing</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about_us">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="{% url 'web_design' %}">Web Design</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/services/seo_services">SEO</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{% url 'graphic_design' %}">Graphic Design</a></li>
+                            </ul>
+                        </li>
+                        {% comment %} <li class="nav-item">
+                            <a class="nav-link" href="/portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/affiliate">Become an Affiliate</a>
+                        </li> {% endcomment %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    {% comment %} <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> {% endcomment %}
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-wrapper container my-4">
+        {% block c1 %}{% endblock %}
+        {% block c2 %}{% endblock %}
+        {% block c3 %}{% endblock %}
+        {% block c4 %}{% endblock %}
+    </main>
+
+<!-- Updated Footer -->
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Us Section -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: <a href="mailto:vedmatawebdesigning@gmail.com" class="text-white">vedmatawebdesigning@gmail.com</a></p>
+                <p>Phone: <a href="tel:+91-9506933715" class="text-white">+91-9506933715</a></p>
+                <p>Address: Hazratganj, Lucknow, UP, 226020, India</p>
+            </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-white" href="/">Home</a></li>
+                    <li><a class="text-white" href="/about_us">About Us</a></li>
+                    <li><a class="text-white" href="/services">Services</a></li>
+                    <li><a class="text-white" href="/contact">Contact Us</a></li>
+                    <li><a class="text-white" href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a class="text-white" href="/terms">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Services</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-white" href="/">Web Designing</a></li>
+                    <li><a class="text-white" href="/about_us">Graphic Designing</a></li>
+                    <li><a class="text-white" href="/services">SEO Enhancement</a></li>
+                </ul>
+            </div>
+            <!-- Follow Us Section -->
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="d-flex">
+                    <a href="https://www.facebook.com/VedmataWebDesigning" class="me-3"><img src="{% static 'images/facebook-icon.png' %}" alt="Facebook"></a>
+                    <a href="https://twitter.com/VedmataWebDesigning" class="me-3"><img src="{% static 'images/twitter-icon.png' %}" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/vedmatawebdesigning" class="me-3"><img src="{% static 'images/linkedin-icon.png' %}" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/vedmatawebdesigning" class="me-3"><img src="{% static 'images/instagram-icon.png' %}" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-3">&copy; 2025 Vedmata Web Designing. All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

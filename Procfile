@@ -1,0 +1,1 @@
+web : gunicorn vedmata_web_designing.wsgi --log-file -

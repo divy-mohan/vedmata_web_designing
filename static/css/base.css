@@ -1,0 +1,240 @@
+/* Theme Colors */
+:root {
+    --primary-color: #760ffc; /* Vibrant Blue Theme */
+    --secondary-color: #f06292; /* Pink Accent */
+    --text-color-dark: #ffffff; /* Light text for dark mode */
+    --text-color-light: #2c2c54; /* Dark text for light mode */
+    --background-dark: #1e1e2f; /* Dark background */
+    --background-light: #2c2c54; /* Slightly lighter dark background */
+    --border-radius: 16px;
+    --shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease-in-out;
+    --perspective: 1000px;
+}
+
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling - Always Dark Mode */
+body {
+    background-color: var(--background-dark); /* Dark background */
+    color: var(--text-color-dark); /* Light text */
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+/* Header Styling - Dark Theme */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(30, 30, 47, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+/* Navbar Styling - Dark Background */
+.navbar {
+    padding: 0.8rem 1.2rem;
+    background-color: var(--background-light); /* Slightly lighter dark background */
+}
+
+/* Navbar Brand - Dark Theme */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--text-color-dark); /* Light text */
+    transform: perspective(var(--perspective)) rotateY(0deg); /* 3D effect */
+    transition: var(--transition);
+}
+
+.navbar-brand:hover {
+    transform: perspective(var(--perspective)) rotateY(10deg); /* Rotate on hover */
+}
+
+/* Navbar Links - Dark Theme */
+.navbar-nav .nav-item .nav-link {
+    color: var(--text-color-dark); /* Light text */
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transform: perspective(var(--perspective)) rotateX(10deg); /* 3D effect */
+}
+
+/* Content Wrapper - Space for Content */
+.content-wrapper {
+    padding-top: 2rem;
+}
+
+/* Heading Styles */
+h1, h2, h3, h5 {
+    font-weight: 700;
+    color: var(--text-color-dark); /* Light text */
+    transform: perspective(var(--perspective)) rotateX(0deg); /* 3D effect */
+    transition: var(--transition);
+}
+
+h1:hover, h2:hover, h3:hover, h5:hover {
+    transform: perspective(var(--perspective)) rotateX(10deg); /* Rotate on hover */
+}
+
+/* Backdrop Blur Effect - Dark Theme */
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    transition: var(--transition);
+    transform: perspective(var(--perspective)) rotateX(0deg); /* 3D effect */
+}
+
+.backdrop-blur:hover {
+    transform: perspective(var(--perspective)) rotateX(10deg); /* Rotate on hover */
+}
+
+/* From Uiverse.io by JulanDeAlb */
+.hamburger {
+cursor: pointer;
+}
+
+.hamburger input {
+display: none;
+}
+
+.hamburger svg {
+/* The size of the SVG defines the overall size */
+height: 3em;
+/* Define the transition for transforming the SVG */
+transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+fill: none;
+stroke: white;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-width: 3;
+/* Define the transition for transforming the Stroke */
+transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+stroke-dasharray: 20 300;
+stroke-dashoffset: -32.42;
+}
+
+
+
+
+/* footer */
+
+footer {
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00ffaa;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer p, footer a {
+    font-size: 1rem;
+    color: #bfbfbf;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;  /* underline हटाया */
+}
+
+footer a:hover {
+    color: #00ffaa;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer .list-unstyled li a {
+    position: relative;
+    padding-left: 10px;
+    text-decoration: none;  /* underline हटाया */
+}
+
+footer .list-unstyled li a::before {
+    content: '•';
+    color: #00ffaa;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+footer .d-flex a img {
+    width: 32px;
+    height: 32px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .d-flex a:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+footer .text-center {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+}
+
+/* Existing footer styles remain unchanged */
+footer .col-md-4 {
+    /* Remove extra bottom margin for large screens if any */
+    margin-bottom: 0;
+    padding: 0 10px; /* Adjust horizontal padding between columns */
+}
+
+/* Add a negative margin to the row to offset the column padding */
+footer .row {
+    margin: 0 -10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .d-flex {
+        justify-content: center;
+    }
+}

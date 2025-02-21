@@ -1,0 +1,438 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Custom Web Design & Graphic Solutions | Vedmata Web Designing{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block c1 %}
+<!-- Hero Section -->
+<section class="hero bg-dark text-white py-5">
+    <div class="container">
+        <div class="hero-text">
+            <h1>Empowering Your Business with Stunning Websites & Designs</h1>
+            <p>Transform your online presence with professional web design, graphic design, and SEO solutions. At Vedmata Web Designing, we help you create a lasting impact in the digital world.</p>
+            <a href="/contact" class="btn btn-light">Connect with Us</a>
+        </div>
+        <div class="laptop">
+            <div class="screen">
+              <div class="header"></div>
+              <div class="text ">Get Your Dream Website Ready by IItians</div>
+            </div>
+            <div class="keyboard"></div>
+        </div>
+          
+    </div>
+</section>
+{% endblock %}
+
+
+{% block c2 %}
+<!-- Introduction to Services -->
+<section class="services py-5">
+  <div class="container">
+      <h2 class="text-center">Our Services</h2>
+      <div class="row">
+          <!-- Block 1: Web Design -->
+          <div class="col-md-4">
+              <div class="outer">
+                  <div class="dot"></div>
+                  <div class="card">
+                      <div class="ray"></div>
+                      <div class="texts">Web Design</div>
+                      <div class="description">Custom websites designed for startups and businesses looking to create a professional digital presence.</div>
+                      <div class="line topl"></div>
+                      <div class="line leftl"></div>
+                      <div class="line bottoml"></div>
+                      <div class="line rightl"></div>
+                      <ul class="card__list">
+                      <li class="card__list_item">
+                          <span class="check">
+                              <svg
+                                  class="check_svg"
+                                  fill="currentColor"
+                                  viewBox="0 0 16 16"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      clip-rule="evenodd"
+                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                                      fill-rule="evenodd"
+                                  ></path>
+                              </svg>
+                          </span>
+                          <span class="list_text">Professional Design</span>
+                      </li>
+                      <li class="card__list_item">
+                          <span class="check">
+                              <svg
+                                  class="check_svg"
+                                  fill="currentColor"
+                                  viewBox="0 0 16 16"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      clip-rule="evenodd"
+                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                                      fill-rule="evenodd"
+                                  ></path>
+                              </svg>
+                          </span>
+                          <span class="list_text">Responsive Layout</span>
+                      </li>
+                  </ul>
+                     <a class="button" href="{% url 'web_design' %}">Know More</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Block 2: Graphic Design -->
+          <div class="col-md-4">
+              <div class="outer">
+                  <div class="dot"></div>
+                  <div class="card">
+                      <div class="ray"></div>
+                      <div class="texts">Graphic Design</div>
+                      <div class="description">From logos to social media graphics, our creative design solutions will help your brand stand out.</div>
+                      <div class="line topl"></div>
+                      <div class="line leftl"></div>
+                      <div class="line bottoml"></div>
+                      <div class="line rightl"></div>
+                      <ul class="card__list">
+                            <li class="card__list_item">
+                                <span class="check">
+                                    <svg
+                                        class="check_svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            clip-rule="evenodd"
+                                            d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                                            fill-rule="evenodd"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <span class="list_text">Brand Identity</span>
+                            </li>
+                            <li class="card__list_item">
+                                <span class="check">
+                                    <svg
+                                        class="check_svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            clip-rule="evenodd"
+                                            d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                                            fill-rule="evenodd"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <span class="list_text">Creative Solutions</span>
+                            </li>
+                        </ul>
+                        <a class="button" href="{% url 'graphic_design' %}">Know More</a>    
+                  </div>
+              </div>
+          </div>
+          <!-- Block 3: SEO Optimization -->
+          <div class="col-md-4">
+              <div class="outer">
+                  <div class="dot"></div>
+                  <div class="card">
+                      <div class="ray"></div>
+                      <div class="texts">SEO Enhance</div>
+                      <div class="description">Improve your website's search engine ranking with our SEO strategies and bring in more organic traffic.</div>
+                      <div class="line topl"></div>
+                      <div class="line leftl"></div>
+                      <div class="line bottoml"></div>
+                      <div class="line rightl"></div>
+                      <ul class="card__list">
+                        <li class="card__list_item">
+                            <span class="check">
+                                <svg
+                                    class="check_svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 16 16"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        clip-rule="evenodd"
+                                        d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                                        fill-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <span class="list_text">Higher Rankings</span>
+                        </li>
+                        <li class="card__list_item">
+                            <span class="check">
+                                <svg
+                                    class="check_svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 16 16"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        clip-rule="evenodd"
+                                        d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                                        fill-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <span class="list_text">Organic Traffic</span>
+                        </li>
+                    </ul>
+                    <a class="button" href="{% url 'seo_services' %}">Know More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<div class="hr-line">
+    <hr>
+</div>
+{% endblock %}
+
+{% block c3 %}
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us-new ">
+    <div class="container">
+        <h2 class="text-center">Why Choose Vedmata Web Designing?</h2>
+        <div class="row">
+            
+            <!-- Web Design Block -->
+            <div class="col-md-4">
+                <div class="e-card playing">
+                    <div class="image web-design"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="infotop">
+                        <h3>safe & Fast Website</h3>
+                        <p>Website should be lightning-fast, focused, and built on powerful Django-Python technology for seamless performance.</p>
+                        <ul> 
+                            <li>Led by an <b>IIT Madras</b> Graduates</li>
+                            <li>Blazing-fast performance & Design</li>
+                            <li>Mobile & SEO-friendly structure</li>
+                        </ul>
+                        <!-- From Uiverse.io by vinodjangid07 --> 
+                        <button class="buttons">
+                            <span class="texts">Know More</span>
+                            <span class="svg">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="20"
+                                viewBox="0 0 38 15"
+                                fill="none"
+                            >
+                                <path
+                                fill="white"
+                                d="M10 7.519l-.939-.344h0l.939.344zm14.386-1.205l-.981-.192.981.192zm1.276 5.509l.537.843.148-.094.107-.139-.792-.611zm4.819-4.304l-.385-.923h0l.385.923zm7.227.707a1 1 0 0 0 0-1.414L31.343.448a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364zM1 7.519l.554.833.029-.019.094-.061.361-.23 1.277-.77c1.054-.609 2.397-1.32 3.629-1.787.617-.234 1.17-.392 1.623-.455.477-.066.707-.008.788.034.025.013.031.021.039.034a.56.56 0 0 1 .058.235c.029.327-.047.906-.39 1.842l1.878.689c.383-1.044.571-1.949.505-2.705-.072-.815-.45-1.493-1.16-1.865-.627-.329-1.358-.332-1.993-.244-.659.092-1.367.305-2.056.566-1.381.523-2.833 1.297-3.921 1.925l-1.341.808-.385.245-.104.068-.028.018c-.011.007-.011.007.543.84zm8.061-.344c-.198.54-.328 1.038-.36 1.484-.032.441.024.94.325 1.364.319.45.786.64 1.21.697.403.054.824-.001 1.21-.09.775-.179 1.694-.566 2.633-1.014l3.023-1.554c2.115-1.122 4.107-2.168 5.476-2.524.329-.086.573-.117.742-.115s.195.038.161.014c-.15-.105.085-.139-.076.685l1.963.384c.192-.98.152-2.083-.74-2.707-.405-.283-.868-.37-1.28-.376s-.849.069-1.274.179c-1.65.43-3.888 1.621-5.909 2.693l-2.948 1.517c-.92.439-1.673.743-2.221.87-.276.064-.429.065-.492.057-.043-.006.066.003.155.127.07.099.024.131.038-.063.014-.187.078-.49.243-.94l-1.878-.689zm14.343-1.053c-.361 1.844-.474 3.185-.413 4.161.059.95.294 1.72.811 2.215.567.544 1.242.546 1.664.459a2.34 2.34 0 0 0 .502-.167l.15-.076.049-.028.018-.011c.013-.008.013-.008-.524-.852l-.536-.844.019-.012c-.038.018-.064.027-.084.032-.037.008.053-.013.125.056.021.02-.151-.135-.198-.895-.046-.734.034-1.887.38-3.652l-1.963-.384zm2.257 5.701l.791.611.024-.031.08-.101.311-.377 1.093-1.213c.922-.954 2.005-1.894 2.904-2.27l-.771-1.846c-1.31.547-2.637 1.758-3.572 2.725l-1.184 1.314-.341.414-.093.117-.025.032c-.01.013-.01.013.781.624zm5.204-3.381c.989-.413 1.791-.42 2.697-.307.871.108 2.083.385 3.437.385v-2c-1.197 0-2.041-.226-3.19-.369-1.114-.139-2.297-.146-3.715.447l.771 1.846z"
+                                ></path>
+                            </svg>
+                            </span>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Graphic Design Block -->
+            <div class="col-md-4">
+                <div class="e-card playing">
+                    <div class="image graphic-design"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="infotop">
+                        <h3>Boost your reach!</h3>
+                        <p>A great website means nothing if people can’t find it! Our SEO-optimized and strategically designed websites ensure:</p>
+                        
+                        <ul>
+                            <li>Higher Google ranking better visibility</li>
+                            <li>More leads with sales & smart design</li>
+                            <li>Stronger brand authority in industry</li>
+                        </ul>
+                    
+                            <!-- From Uiverse.io by vinodjangid07 --> 
+                            <button class="buttons">
+                                <span class="texts">Know More</span>
+                                <span class="svg">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="50"
+                                    height="20"
+                                    viewBox="0 0 38 15"
+                                    fill="none"
+                                >
+                                    <path
+                                    fill="white"
+                                    d="M10 7.519l-.939-.344h0l.939.344zm14.386-1.205l-.981-.192.981.192zm1.276 5.509l.537.843.148-.094.107-.139-.792-.611zm4.819-4.304l-.385-.923h0l.385.923zm7.227.707a1 1 0 0 0 0-1.414L31.343.448a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364zM1 7.519l.554.833.029-.019.094-.061.361-.23 1.277-.77c1.054-.609 2.397-1.32 3.629-1.787.617-.234 1.17-.392 1.623-.455.477-.066.707-.008.788.034.025.013.031.021.039.034a.56.56 0 0 1 .058.235c.029.327-.047.906-.39 1.842l1.878.689c.383-1.044.571-1.949.505-2.705-.072-.815-.45-1.493-1.16-1.865-.627-.329-1.358-.332-1.993-.244-.659.092-1.367.305-2.056.566-1.381.523-2.833 1.297-3.921 1.925l-1.341.808-.385.245-.104.068-.028.018c-.011.007-.011.007.543.84zm8.061-.344c-.198.54-.328 1.038-.36 1.484-.032.441.024.94.325 1.364.319.45.786.64 1.21.697.403.054.824-.001 1.21-.09.775-.179 1.694-.566 2.633-1.014l3.023-1.554c2.115-1.122 4.107-2.168 5.476-2.524.329-.086.573-.117.742-.115s.195.038.161.014c-.15-.105.085-.139-.076.685l1.963.384c.192-.98.152-2.083-.74-2.707-.405-.283-.868-.37-1.28-.376s-.849.069-1.274.179c-1.65.43-3.888 1.621-5.909 2.693l-2.948 1.517c-.92.439-1.673.743-2.221.87-.276.064-.429.065-.492.057-.043-.006.066.003.155.127.07.099.024.131.038-.063.014-.187.078-.49.243-.94l-1.878-.689zm14.343-1.053c-.361 1.844-.474 3.185-.413 4.161.059.95.294 1.72.811 2.215.567.544 1.242.546 1.664.459a2.34 2.34 0 0 0 .502-.167l.15-.076.049-.028.018-.011c.013-.008.013-.008-.524-.852l-.536-.844.019-.012c-.038.018-.064.027-.084.032-.037.008.053-.013.125.056.021.02-.151-.135-.198-.895-.046-.734.034-1.887.38-3.652l-1.963-.384zm2.257 5.701l.791.611.024-.031.08-.101.311-.377 1.093-1.213c.922-.954 2.005-1.894 2.904-2.27l-.771-1.846c-1.31.547-2.637 1.758-3.572 2.725l-1.184 1.314-.341.414-.093.117-.025.032c-.01.013-.01.013.781.624zm5.204-3.381c.989-.413 1.791-.42 2.697-.307.871.108 2.083.385 3.437.385v-2c-1.197 0-2.041-.226-3.19-.369-1.114-.139-2.297-.146-3.715.447l.771 1.846z"
+                                    ></path>
+                                </svg>
+                                </span>
+                            </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SEO Optimization Block -->
+            <div class="col-md-4">
+                <div class="e-card playing">
+                    <div class="image seo-optimization"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="infotop">
+                        <h3>All You Need is Here</h3>
+                        <p>Managing web design, branding, SEO, and marketing can be overwhelming but we’ve got you covered!</p>
+                        <ul>
+                            <li>All-in-one: Website, Branding & SEO!</li>
+                            <li>Dedicated support from experts</li>
+                            <li>Premium quality at the right price!</li>
+                        </ul>
+                        <!-- From Uiverse.io by vinodjangid07 --> 
+                        <button class="buttons">
+                            <span class="texts">Know More</span>
+                            <span class="svg">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="20"
+                                viewBox="0 0 38 15"
+                                fill="none"
+                            >
+                                <path
+                                fill="white"
+                                d="M10 7.519l-.939-.344h0l.939.344zm14.386-1.205l-.981-.192.981.192zm1.276 5.509l.537.843.148-.094.107-.139-.792-.611zm4.819-4.304l-.385-.923h0l.385.923zm7.227.707a1 1 0 0 0 0-1.414L31.343.448a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364zM1 7.519l.554.833.029-.019.094-.061.361-.23 1.277-.77c1.054-.609 2.397-1.32 3.629-1.787.617-.234 1.17-.392 1.623-.455.477-.066.707-.008.788.034.025.013.031.021.039.034a.56.56 0 0 1 .058.235c.029.327-.047.906-.39 1.842l1.878.689c.383-1.044.571-1.949.505-2.705-.072-.815-.45-1.493-1.16-1.865-.627-.329-1.358-.332-1.993-.244-.659.092-1.367.305-2.056.566-1.381.523-2.833 1.297-3.921 1.925l-1.341.808-.385.245-.104.068-.028.018c-.011.007-.011.007.543.84zm8.061-.344c-.198.54-.328 1.038-.36 1.484-.032.441.024.94.325 1.364.319.45.786.64 1.21.697.403.054.824-.001 1.21-.09.775-.179 1.694-.566 2.633-1.014l3.023-1.554c2.115-1.122 4.107-2.168 5.476-2.524.329-.086.573-.117.742-.115s.195.038.161.014c-.15-.105.085-.139-.076.685l1.963.384c.192-.98.152-2.083-.74-2.707-.405-.283-.868-.37-1.28-.376s-.849.069-1.274.179c-1.65.43-3.888 1.621-5.909 2.693l-2.948 1.517c-.92.439-1.673.743-2.221.87-.276.064-.429.065-.492.057-.043-.006.066.003.155.127.07.099.024.131.038-.063.014-.187.078-.49.243-.94l-1.878-.689zm14.343-1.053c-.361 1.844-.474 3.185-.413 4.161.059.95.294 1.72.811 2.215.567.544 1.242.546 1.664.459a2.34 2.34 0 0 0 .502-.167l.15-.076.049-.028.018-.011c.013-.008.013-.008-.524-.852l-.536-.844.019-.012c-.038.018-.064.027-.084.032-.037.008.053-.013.125.056.021.02-.151-.135-.198-.895-.046-.734.034-1.887.38-3.652l-1.963-.384zm2.257 5.701l.791.611.024-.031.08-.101.311-.377 1.093-1.213c.922-.954 2.005-1.894 2.904-2.27l-.771-1.846c-1.31.547-2.637 1.758-3.572 2.725l-1.184 1.314-.341.414-.093.117-.025.032c-.01.013-.01.013.781.624zm5.204-3.381c.989-.413 1.791-.42 2.697-.307.871.108 2.083.385 3.437.385v-2c-1.197 0-2.041-.226-3.19-.369-1.114-.139-2.297-.146-3.715.447l.771 1.846z"
+                                ></path>
+                            </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Call to Action Section -->
+<section class="cta text-white bg-dark py-5">
+    <div class="container text-center">
+        <h2>Ready to Start Your Digital Journey?</h2>
+        <p>Contact us today for a free consultation and get started with your custom web design or SEO services.</p>
+        <a href="/contact" class="btn btn-light">Contact Us</a>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block c4 %}
+<div class="hr-line">
+    <hr>
+</div>
+   
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="faq-container">
+        <h2 class="faq-heading">Frequently Asked Questions (FAQs)</h2>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-toggle">
+            <label for="faq1" class="faq-title">1. What services does Vedmata Web Designing offer?</label>
+            <div class="faq-content">Vedmata Web Designing provides expert solutions, including custom web design, graphic design, SEO services, and branding...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-toggle">
+            <label for="faq2" class="faq-title">2. Why should I choose Vedmata Web Designing for my business website?</label>
+            <div class="faq-content">We are a team of IIT Madras graduates delivering safe, fast, and SEO-friendly websites...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-toggle">
+            <label for="faq3" class="faq-title">3. How does SEO improve my website’s visibility?</label>
+            <div class="faq-content">SEO (Search Engine Optimization) enhances your website by increasing its visibility on Google...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq4" class="faq-toggle">
+            <label for="faq4" class="faq-title">4. What makes your web design services unique?</label>
+            <div class="faq-content">Unlike generic web design companies, we offer custom-built, scalable, and SEO-optimized websites...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq5" class="faq-toggle">
+            <label for="faq5" class="faq-title">5. How can Vedmata Web Designing help improve my brand identity?</label>
+            <div class="faq-content">We offer branding solutions, including logo design, brand identity development, and social media graphics...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq6" class="faq-toggle">
+            <label for="faq6" class="faq-title">6. Do you provide website redesign services?</label>
+            <div class="faq-content">Yes! If you have an existing website that needs a modern and SEO-friendly redesign, we can help...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq7" class="faq-toggle">
+            <label for="faq7" class="faq-title">7. How long does it take to develop a website?</label>
+            <div class="faq-content">The timeline depends on the project complexity. A basic website takes 2-4 weeks...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq8" class="faq-toggle">
+            <label for="faq8" class="faq-title">8. Are your websites mobile-friendly?</label>
+            <div class="faq-content">Absolutely! Our websites are fully responsive and adapt seamlessly to all devices...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq9" class="faq-toggle">
+            <label for="faq9" class="faq-title">9. How do I get started with Vedmata Web Designing?</label>
+            <div class="faq-content">Simply contact us through our website, and we will schedule a free consultation...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq10" class="faq-toggle">
+            <label for="faq10" class="faq-title">10. What industries do you serve?</label>
+            <div class="faq-content">We serve startups, eCommerce, healthcare, education, real estate, and corporate sectors...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq11" class="faq-toggle">
+            <label for="faq11" class="faq-title">11. Can you optimize my website for faster loading speed?</label>
+            <div class="faq-content">Yes! We use advanced techniques like image compression, caching, and code minimization...</div>
+        </div>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq12" class="faq-toggle">
+            <label for="faq12" class="faq-title">12. What are the benefits of SEO-optimized content?</label>
+            <div class="faq-content">SEO content helps rank higher on Google by targeting relevant keywords...</div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+
+
+{% block extra_head %}
+<meta name="description" content="Vedmata Web Designing offers custom websites, branding, logo design, SEO, and digital marketing solutions. Start your journey with a professional web design today!">
+<meta name="keywords" content="Web Design, Graphic Design, SEO Services, Website Development, Branding, Social Media Graphics">
+{% endblock %}
+
+{% block extra_scripts %}
+
+{% endblock %}
