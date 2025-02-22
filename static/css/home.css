@@ -360,6 +360,8 @@ body {
 @media (max-width: 576px) {
   .hero {
     margin-top: -16%;
+    margin-left: 0%;
+    margin-right: 0%;
     padding: 2rem 1rem;
     width: 100%;
   }
@@ -441,6 +443,7 @@ body {
     padding: 0.5rem 0.7rem;
   }
 }
+
 
 
 
@@ -1014,16 +1017,16 @@ body {
 
 @media (max-width: 576px) {
   .e-card {
-    width: 370px;
-    height: 380px;
-
+    width: 350px;
+    height: 400px;
+    margin-left: -3%;
     margin-top: 10%;
     margin-bottom: 10%;
     }
 
   .infotop p {
     font-size: 18px;
-    margin-top: -5%;
+    margin-top: -1%;
   }
 
   .infotop h3 {
