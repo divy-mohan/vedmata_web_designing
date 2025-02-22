@@ -33,22 +33,25 @@
 
 
 <section class="container my-5">
-    <h2>📩 Contact Us</h2>
-    <p>Fill out the form below, and we’ll get back to you as soon as possible.</p>
+    <h2 class="text-center">📩 Contact Us</h2>
+    <p class="text-center">Fill out the form below, and we’ll get back to you as soon as possible.</p>
 
     {% if messages %}
-        {% for message in messages %}
-            <div class="alert alert-success">{{ message }}</div>
-        {% endfor %}
+    <ul class="messages">
+    {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+    </ul>
     {% endif %}
 
-    <form action="{% url 'contact' %}" method="POST" class="p-4 border rounded">
+
+    <form action="{% url 'contact' %}" method="POST" class="contact-form">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit">Send Message</button>
     </form>
-    <hr>
 </section>
+
 
 
 <section class="container my-5">
