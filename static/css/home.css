@@ -390,7 +390,7 @@ body {
   .laptop {
     width: 100%;
     margin: 1rem auto 0 auto;
-    margin-left: 0%;
+    margin-left: -5%;
     transform: none;
     animation: none;
   }
@@ -407,7 +407,7 @@ body {
   }
   .keyboard {
     height: 12px;
-    margin-left: 1%;
+    margin-left: -0%;
     width: 310px;
   }
 
