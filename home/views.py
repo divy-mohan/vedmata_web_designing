@@ -39,4 +39,4 @@ def career_view(request):
     else:
         form = CareerApplicationForm()
 
-    return render(request, "career_form.html", {"form": form})
+    return render(request, "home/career_form.html", {"form": form})
