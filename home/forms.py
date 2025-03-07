@@ -26,8 +26,8 @@ class ContactForm(forms.ModelForm):
 class CareerApplicationForm(forms.ModelForm):
     class Meta:
         model = CareerApplication
-        fields = ["name", "phone_number", "email", "job_role", "resume"]
+        fields = ["name", "phone_number", "email", "job_role"]  # 'resume' हटा दिया
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields["resume"].widget.attrs.update({"accept": ".pdf,.jpg,.png"})
+

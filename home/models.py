@@ -36,7 +36,6 @@ class CareerApplication(models.Model):
     phone_number = models.CharField(max_length=15)
     email = models.EmailField()
     job_role = models.CharField(max_length=50, choices=JOB_ROLE_CHOICES, default="commission_sales")
-    resume = models.FileField(upload_to="resumes/", blank=True, null=True)
-
+    
     def __str__(self):
         return self.name
