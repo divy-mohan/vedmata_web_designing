@@ -23,3 +23,20 @@ def contact_view(request):
 # Thank You Page View
 def thank_you_view(request):
     return render(request, "home/thank_you.html")
+
+
+from .forms import CareerApplicationForm  # CareerApplicationForm import किया
+
+def career_view(request):
+    if request.method == "POST":
+        form = CareerApplicationForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Your application has been submitted successfully!")
+            return redirect("thank_you")  # Redirect करने के लिए, URL name 'career' होना चाहिए
+        else:
+            messages.error(request, "Please correct the errors below.")
+    else:
+        form = CareerApplicationForm()
+
+    return render(request, "career_form.html", {"form": form})

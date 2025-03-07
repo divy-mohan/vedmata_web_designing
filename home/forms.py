@@ -1,5 +1,5 @@
 from django import forms
-from .models import ContactMessage
+from .models import CareerApplication, ContactMessage 
 from .widgets import CustomCheckboxSelectMultiple
 
 class ContactForm(forms.ModelForm):
@@ -20,3 +20,14 @@ class ContactForm(forms.ModelForm):
     class Meta:
         model = ContactMessage
         fields = ['name', 'email', 'message', 'country_name', 'mobile_number', 'services']
+
+
+
+class CareerApplicationForm(forms.ModelForm):
+    class Meta:
+        model = CareerApplication
+        fields = ["name", "phone_number", "email", "job_role", "resume"]
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["resume"].widget.attrs.update({"accept": ".pdf,.jpg,.png"})

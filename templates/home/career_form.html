@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Careers - Apply Now{% endblock %}
+
+{% block c1 %}
+<div class="container">
+    <h2 class="my-4 text-center">Join Vedmata Web Designing</h2>
+    <p class="text-center">Fill out the form below to apply for a commission-based sales role.</p>
+
+    <div class="card p-4 shadow">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <div class="mb-3">
+                <label for="id_name" class="form-label">Full Name</label>
+                {{ form.name }}
+            </div>
+
+            <div class="mb-3">
+                <label for="id_phone_number" class="form-label">Phone Number</label>
+                {{ form.phone_number }}
+            </div>
+
+            <div class="mb-3">
+                <label for="id_email" class="form-label">Email Address</label>
+                {{ form.email }}
+            </div>
+
+            <div class="mb-3">
+                <label for="id_job_role" class="form-label">Job Role</label>
+                {{ form.job_role }}
+            </div>
+
+            <div class="mb-3">
+                <label for="id_resume" class="form-label">Upload Resume (PDF/JPG/PNG)</label>
+                {{ form.resume }}
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

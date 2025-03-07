@@ -18,8 +18,7 @@ class ContactMessage(models.Model):
     mobile_number = models.CharField(
         max_length=10,
         default='', 
-        validators=[RegexValidator(regex='^\d{10}$', message='⚠️ Mobile number must be a Valid number⚠️')]
-    )
+        validators=[RegexValidator(regex=r'^\d{10}$', message='⚠️ Mobile number must be a Valid number⚠️')])
 
     services = models.JSONField(default=list)  # Multiple values store करने के लिए
 
@@ -27,3 +26,17 @@ class ContactMessage(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.email} - {self.country_name} {self.mobile_number} - Services: {', '.join(self.services)}"
+
+class CareerApplication(models.Model):
+    JOB_ROLE_CHOICES = [
+        ("commission_sales", "Commission based Sales Role"),
+    ]
+
+    name = models.CharField(max_length=255)
+    phone_number = models.CharField(max_length=15)
+    email = models.EmailField()
+    job_role = models.CharField(max_length=50, choices=JOB_ROLE_CHOICES, default="commission_sales")
+    resume = models.FileField(upload_to="resumes/", blank=True, null=True)
+
+    def __str__(self):
+        return self.name
