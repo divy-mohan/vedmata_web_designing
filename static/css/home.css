@@ -1125,29 +1125,67 @@ body {
 
 
 
-@media (max-width: 1366px) and (min-width: 1280px) { /* 15-inch laptops */
-  .laptop {
-      transform: scale(0.95);
-  }
-  .text {
-      font-size: 1.2rem;
-  }
-}
-
 @media (max-width: 1280px) and (min-width: 1024px) { /* 13-inch laptops */
   .laptop {
-      transform: scale(0.85);
+    width: 460px; /* Same as screen width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10%, 0; /* Center horizontally */
+    padding-top: 0; /* Remove extra top space */
+    position: relative; 
+    top: 0; 
   }
-  .text {
-      font-size: 1.1rem;
-  }
+
+  .screen {
+    width: 400px;
+    height: 230px;
+    margin-left: 5%; /* Remove extra margin */
+    margin-top: -20%;
+    position: relative; /* For after pseudo-element */
 }
 
-@media (max-width: 1024px) and (min-width: 800px) { /* 11-inch laptops */
-  .laptop {
-      transform: scale(0.75);
-  }
-  .text {
-      font-size: 1rem;
-  }
+/* Bottom bezel effect */
+.screen::after {
+    position: absolute;
+    bottom: -10px; /* Slightly below the screen */
+    left: 0%;
+    width: 420px; /* Slightly wider for effect */
+    height: 15px; /* Thickness of bottom bezel */
+}
+
+.keyboard {
+  width: 460px;
+  height: 15px; /* Adjust height to make it visible */
+  margin-left: 3%;
+  margin-top: -0.5%;
+  position: relative; /* Required for pseudo-elements */
+}
+
+.keyboard::after {
+  background: #e2e3e4;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 0 4px 2px #babdbf;
+  content: "";
+  height: 10px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  top: 0;
+  width: 120px;
+}
+
+.keyboard::before {
+  background: transparent;
+  border-radius: 0 0 3px 3px;
+  bottom: -2px;
+  box-shadow: -270px 0 #27272700, 250px 0 #27262600;
+  content: "";
+  height: 2px;
+  left: 0%;
+  margin-left: 0px;
+  position: absolute;
+  width: 30px;
+}
 }
