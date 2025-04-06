@@ -1,0 +1,34 @@
+<!-- filepath: c:\Users\Gurudev\Documents\GitHub\vedmata_web_designing\templates\home\refund.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/refund.css' %}">
+{% endblock %}
+
+{% block title %}Refund Policy{% endblock %}
+
+{% block c1 %}
+<section class="container my-5">
+    <h1 class="text-center mb-4">Refund Policy</h1>
+    <div class="backdrop-blur p-4">
+        <h2>1. Agreement</h2>
+        <p>Upon completing a Transaction, you are entering into a legally binding and enforceable agreement with Vedmata Web Designing to purchase the product and/or service. After this point, the User may cancel the Transaction only if specifically provided for on the Platform. Any cancellation will be subject to the terms mentioned on the Platform.</p>
+
+        <h2>2. Cancellation Requests</h2>
+        <p>We retain the discretion to approve any cancellation requests. Additional details may be requested before approving such requests.</p>
+
+        <h2>3. Refund Eligibility</h2>
+        <p>Once you have received the product and/or service, you may request a replacement or refund only if the product and/or service does not match the description as mentioned on the Platform.</p>
+
+        <h2>4. Refund Request Timeline</h2>
+        <p>Any request for a refund must be submitted within three days from the date of the Transaction or within the timeline prescribed on the Platform, which shall not be less than three days.</p>
+
+        <h2>5. How to Submit a Refund Request</h2>
+        <p>To submit a refund request, raise a ticket <a href="mailto:vedmatawebdesigning@gmail.com">here</a> or contact us at <a href="mailto:vedmatawebdesigning@gmail.com">vedmatawebdesigning@gmail.com</a>. Provide a clear and specific reason for the refund request, including the exact terms that have been violated, along with any proof, if required.</p>
+
+        <h2>6. Approval Process</h2>
+        <p>Whether a refund will be provided will be determined by Vedmata Web Designing. We may ask for additional details before approving any requests.</p>
+    </div>
+</section>
+{% endblock %}

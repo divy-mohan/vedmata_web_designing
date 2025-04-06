@@ -24,6 +24,13 @@ def contact_view(request):
 def thank_you_view(request):
     return render(request, "home/thank_you.html")
 
+# Terms and Conditions Page View
+def terms_view(request):
+    return render(request, "home/terms.html")
+
+# Refund Policy Page View
+def refund_view(request):
+    return render(request, "home/refund.html")
 
 from .forms import CareerApplicationForm  # CareerApplicationForm import किया
 
