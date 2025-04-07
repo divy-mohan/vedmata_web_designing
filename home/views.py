@@ -32,6 +32,10 @@ def terms_view(request):
 def refund_view(request):
     return render(request, "home/refund.html")
 
+# Privacy Policy Page View
+def privacy_view(request):
+    return render(request, "home/privacy.html")
+
 from .forms import CareerApplicationForm  # CareerApplicationForm import किया
 
 def career_view(request):

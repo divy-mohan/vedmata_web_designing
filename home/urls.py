@@ -8,4 +8,5 @@ urlpatterns = [
     path("thank_you/", views.thank_you_view, name="thank_you"),  # Thank you page URL pattern
     path('terms/', views.terms_view, name='terms'),  # Terms and Conditions page URL pattern
     path('refund/', views.refund_view, name='refund'),  # Refund Policy page URL pattern
+    path('privacy/', views.privacy_view, name='privacy'),  # Privacy Policy page URL pattern
 ]

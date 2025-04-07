@@ -1280,3 +1280,67 @@ body {
   margin-bottom: 3%;
 }
 
+
+/* Rates Section Styling */
+.rates {
+  padding: 2rem 0;
+  background-color: #f8f9fa; /* Light background */
+}
+
+.rates h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.rates h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.rates ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.rates ul li {
+  font-size: 1rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rates h2 {
+      font-size: 1.8rem;
+  }
+
+  .rates h3 {
+      font-size: 1.3rem;
+  }
+
+  .rates ul li {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .rates h2 {
+      font-size: 1.5rem;
+  }
+
+  .rates h3 {
+      font-size: 1.2rem;
+  }
+
+  .rates ul li {
+      font-size: 0.8rem;
+  }
+}
