@@ -1,17 +1,13 @@
-/* General styling for the refund policy section */
+/* General styling for the privacy policy section */
 section.container {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color-dark);
     line-height: 1.6;
 }
 
-section.container p {
-    color: black !important;
-}
-
 /* Styling for headings */
 h1, h2 {
-    color: black;
+    color: var(--primary-color);
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -19,12 +15,10 @@ h1, h2 {
 /* Styling for paragraphs */
 p {
     margin-bottom: 1rem;
-    color: black !important; /* Force black color for all paragraphs */
     font-size: 1rem;
-    line-height: 1.6;
 }
 
-/* Links inside the refund policy */
+/* Links inside the privacy policy */
 a {
     color: var(--secondary-color);
     text-decoration: none;

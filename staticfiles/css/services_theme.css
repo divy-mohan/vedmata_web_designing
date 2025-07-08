@@ -1,0 +1,266 @@
+/* Services Theme CSS - Matching base.css */
+:root {
+    --primary-color: #760ffc;
+    --secondary-color: #f06292;
+    --text-color-dark: #ffffff;
+    --text-color-light: #2c2c54;
+    --background-dark: #1e1e2f;
+    --background-light: #2c2c54;
+    --border-radius: 16px;
+    --shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease-in-out;
+    --perspective: 1000px;
+}
+
+/* Service Page Styling */
+.service-container {
+    background: var(--background-dark);
+    color: var(--text-color-dark);
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.service-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--background-light));
+    padding: 4rem 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 3rem;
+    text-align: center;
+    transform: perspective(var(--perspective)) rotateX(0deg);
+    transition: var(--transition);
+}
+
+.service-hero:hover {
+    transform: perspective(var(--perspective)) rotateX(5deg);
+}
+
+.service-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    color: var(--text-color-dark);
+}
+
+.service-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Service Cards */
+.service-card-theme {
+    background: var(--background-light);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: perspective(var(--perspective)) rotateY(0deg);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.service-card-theme:hover {
+    transform: perspective(var(--perspective)) rotateY(5deg) translateY(-10px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 20px 40px rgba(118, 15, 252, 0.3);
+}
+
+.service-card-theme h2, .service-card-theme h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Feature Lists */
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    padding: 0.5rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--text-color-dark);
+    transition: var(--transition);
+}
+
+.feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.feature-list li:hover {
+    color: var(--secondary-color);
+    transform: translateX(10px);
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: linear-gradient(135deg, var(--background-light), var(--primary-color));
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    transform: perspective(var(--perspective)) rotateX(0deg);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+    transform: perspective(var(--perspective)) rotateX(10deg) scale(1.05);
+    border-color: var(--secondary-color);
+}
+
+.pricing-card h3 {
+    color: var(--text-color-dark);
+    margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta-section-theme {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin: 3rem 0;
+    transform: perspective(var(--perspective)) rotateY(0deg);
+    transition: var(--transition);
+}
+
+.cta-section-theme:hover {
+    transform: perspective(var(--perspective)) rotateY(5deg);
+}
+
+.cta-section-theme h2 {
+    color: var(--text-color-dark);
+    margin-bottom: 1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.cta-btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transform: perspective(var(--perspective)) rotateZ(0deg);
+}
+
+.cta-btn:hover {
+    transform: perspective(var(--perspective)) rotateZ(5deg) translateY(-5px);
+}
+
+.cta-btn-primary {
+    background: var(--text-color-dark);
+    color: var(--primary-color);
+}
+
+.cta-btn-secondary {
+    background: transparent;
+    color: var(--text-color-dark);
+    border: 2px solid var(--text-color-dark);
+}
+
+/* FAQ Section */
+.faq-section-theme {
+    background: var(--background-light);
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius);
+    margin: 3rem 0;
+}
+
+.faq-item-theme {
+    background: var(--background-dark);
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    overflow: hidden;
+    transform: perspective(var(--perspective)) rotateX(0deg);
+    transition: var(--transition);
+}
+
+.faq-item-theme:hover {
+    transform: perspective(var(--perspective)) rotateX(5deg);
+}
+
+.faq-toggle-theme {
+    display: none;
+}
+
+.faq-title-theme {
+    display: block;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color-dark);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.faq-title-theme::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.faq-toggle-theme:checked + .faq-title-theme::after {
+    transform: rotate(45deg);
+}
+
+.faq-content-theme {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 1.5rem;
+    background: var(--background-dark);
+    color: var(--text-color-dark);
+}
+
+.faq-toggle-theme:checked + .faq-title-theme + .faq-content-theme {
+    max-height: 300px;
+    padding: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .service-card-theme {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-btn {
+        width: 250px;
+        justify-content: center;
+    }
+}

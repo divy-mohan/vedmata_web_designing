@@ -21,8 +21,8 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Vedmata Web Designing",
-        "url": "https://vedmatawebdesigning.com",
-        "logo": "https://vedmatawebdesigning.com/static/images/logo.png",
+        "url": "https://vmdonline.in",
+        "logo": "https://vmdonline.in/static/images/logo.png",
         "description": "Vedmata Web Designing provides professional web development, graphic design, and digital marketing services.",
         "address": {
         "@type": "PostalAddress",
@@ -60,7 +60,7 @@
     <meta property="og:title" content="Vedmata Web Designing - Custom Websites & Graphic Solutions">
     <meta property="og:description" content="One-stop solution for web development, graphic design, and digital marketing services.">
     <meta property="og:image" content="{% static 'images/seo-image.jpg' %}">
-    <meta property="og:url" content="https://vedmatawebdesigning.com">
+    <meta property="og:url" content="https://vmdonline.in">
     <meta name="twitter:card" content="summary_large_image">
 
     {% block extra_head %}{% endblock %}
@@ -87,11 +87,14 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="{% url 'services_overview' %}">All Services</a></li>
+                                <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="{% url 'web_design' %}">Web Design</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/services/seo_services">SEO</a></li>
-                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{% url 'seo_services' %}">SEO Services</a></li>
                                 <li><a class="dropdown-item" href="{% url 'graphic_design' %}">Graphic Design</a></li>
+                                <li><a class="dropdown-item" href="{% url 'text_to_audio' %}">Text to Audio</a></li>
+                                <li><a class="dropdown-item" href="{% url 'audio_editing' %}">Audio Editing</a></li>
+                                <li><a class="dropdown-item" href="{% url 'video_editing' %}">Video Editing</a></li>
                             </ul>
                         </li>
                         {% comment %} <li class="nav-item">
@@ -149,9 +152,13 @@
             <div class="col-md-4">
                 <h5>Services</h5>
                 <ul class="list-unstyled">
+                    <li><a class="text-white" href="{% url 'services_overview' %}">All Services</a></li>
                     <li><a class="text-white" href="{% url 'web_design' %}">Web Designing</a></li>
                     <li><a class="text-white" href="{% url 'graphic_design' %}">Graphic Designing</a></li>
                     <li><a class="text-white" href="{% url 'seo_services' %}">SEO Enhancement</a></li>
+                    <li><a class="text-white" href="{% url 'text_to_audio' %}">Text to Audio</a></li>
+                    <li><a class="text-white" href="{% url 'audio_editing' %}">Audio Editing</a></li>
+                    <li><a class="text-white" href="{% url 'video_editing' %}">Video Editing</a></li>
                 </ul>
             </div>
             <div class="col-md-4">

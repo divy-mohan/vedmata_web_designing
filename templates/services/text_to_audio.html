@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Text to Audio Conversion Services | Natural Voiceovers{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/services_enhanced.css' %}">
+{% endblock %}
+
+{% block c1 %}
+<section class="vedmata-container vedmata-my-5">
+    <h1 class="vedmata-text-center">🎤 Text to Audio Conversion Services</h1>
+    <p class="vedmata-text-center">Natural, Clear Voiceovers for Content, Apps, & Branding</p>
+</section>
+{% endblock %}
+
+{% block c2 %}
+<section class="vedmata-container vedmata-my-5">
+    <div class="service-highlight-card">
+        <h2 class="vedmata-text-center">Studio-Quality Text-to-Speech Solutions</h2>
+        <p>Transform your written content into engaging audio with our professional text-to-audio conversion services. Perfect for podcasts, e-learning, videos, and accessibility needs.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h3>🎯 Our Features:</h3>
+                <ul class="vedmata-list">
+                    <li>Studio-quality text-to-speech</li>
+                    <li>Multiple voice styles & languages</li>
+                    <li>Natural-sounding AI voices</li>
+                    <li>Custom voice training available</li>
+                    <li>Fast turnaround times</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>🎯 Perfect For:</h3>
+                <ul class="vedmata-list">
+                    <li>Podcast narration</li>
+                    <li>E-learning courses</li>
+                    <li>Video content</li>
+                    <li>Audiobook creation</li>
+                    <li>App voice interfaces</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vedmata-container vedmata-my-5">
+    <h2>🎙️ Voice Options & Languages</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>English Voices</h3>
+            <ul class="vedmata-list">
+                <li>Professional Male/Female</li>
+                <li>British & American accents</li>
+                <li>Conversational tone</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h3>Hindi Voices</h3>
+            <ul class="vedmata-list">
+                <li>Native Hindi speakers</li>
+                <li>Regional variations</li>
+                <li>Clear pronunciation</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h3>Other Languages</h3>
+            <ul class="vedmata-list">
+                <li>Spanish, French, German</li>
+                <li>Regional Indian languages</li>
+                <li>Custom language support</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block c3 %}
+<section class="vedmata-container vedmata-my-5">
+    <h2>💰 Pricing Plans</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Basic</h3>
+                <p><strong>₹500</strong> per 1000 words</p>
+                <ul class="vedmata-list">
+                    <li>Standard AI voice</li>
+                    <li>MP3 format</li>
+                    <li>24-hour delivery</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Premium</h3>
+                <p><strong>₹800</strong> per 1000 words</p>
+                <ul class="vedmata-list">
+                    <li>Premium AI voice</li>
+                    <li>Multiple formats</li>
+                    <li>12-hour delivery</li>
+                    <li>Voice customization</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Professional</h3>
+                <p><strong>₹1200</strong> per 1000 words</p>
+                <ul class="vedmata-list">
+                    <li>Human-like AI voice</li>
+                    <li>All formats included</li>
+                    <li>6-hour delivery</li>
+                    <li>Unlimited revisions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block c4 %}
+<section class="vedmata-container vedmata-my-5">
+    <div class="contact-highlight">
+        <h2>🎤 Ready to Convert Your Text to Audio?</h2>
+        <p>Get professional voiceovers that engage your audience and enhance your content!</p>
+        <div class="contact-info">
+            <a href="/contact" class="contact-item">
+                <i class="bi bi-envelope"></i> Get Free Quote
+            </a>
+            <a href="tel:+91-9506933715" class="contact-item">
+                <i class="bi bi-telephone"></i> Call Now
+            </a>
+            <a href="https://wa.me/919506933715" class="contact-item">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="faq-container">
+        <h2 class="faq-heading">Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-toggle">
+            <label for="faq1" class="faq-title">What file formats do you provide?</label>
+            <div class="faq-content">We provide MP3, WAV, and other audio formats based on your requirements.</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-toggle">
+            <label for="faq2" class="faq-title">How long does it take to convert text to audio?</label>
+            <div class="faq-content">Delivery time ranges from 6-24 hours depending on the package and content length.</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-toggle">
+            <label for="faq3" class="faq-title">Can I request revisions?</label>
+            <div class="faq-content">Yes, we offer revisions based on your selected package. Premium and Professional plans include unlimited revisions.</div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,181 @@
+/* audio.css - Very Attractive Styling for Audio Editing Services Page */
+
+/* Section Container Styling */
+.vedmata-container {
+    padding: 2rem;
+    margin: auto;
+    max-width: 1200px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.vedmata-my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.vedmata-text-center {
+    text-align: center;
+}
+
+/* Card Styling */
+.service-highlight-card {
+    background: linear-gradient(135deg, #2c2c54, #1e1e2f);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-highlight-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.vedmata-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.vedmata-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.vedmata-list li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Contact Highlight */
+.contact-highlight {
+    text-align: center;
+    padding: 2rem;
+    background: #121222;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    box-shadow: var(--shadow);
+}
+
+.contact-item:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* FAQ Section */
+.faq-section {
+    background: #1e1e2f;
+    padding: 3rem 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.faq-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    background: #2c2c54;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.faq-toggle {
+    display: none;
+}
+
+.faq-title {
+    display: block;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #34345c;
+    color: #fff;
+    position: relative;
+}
+
+.faq-title::after {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.3s;
+}
+
+.faq-toggle:checked + .faq-title::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    transition: max-height 0.4s ease;
+    background: #2c2c54;
+}
+
+.faq-toggle:checked + .faq-title + .faq-content {
+    max-height: 300px;
+    padding: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-4, .col-md-6 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,309 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Professional Services | Web Design, SEO & Graphic Design{% endblock %}
+
+{% block meta_description %}
+    Vedmata Web Designing offers comprehensive digital solutions including custom web development, SEO optimization, and professional graphic design services to elevate your business.
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/services_overview.css' %}">
+{% endblock %}
+
+{% block c1 %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Professional Digital Solutions</h1>
+        <p class="hero-subtitle">Transform your business with our comprehensive web design, SEO, and graphic design services</p>
+        <a href="#services" class="cta-button">Explore Our Services</a>
+    </div>
+    <div class="hero-animation">
+        <div class="floating-elements">
+            <div class="element element-1"></div>
+            <div class="element element-2"></div>
+            <div class="element element-3"></div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block c2 %}
+<!-- Services Grid -->
+<section id="services" class="services-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Comprehensive digital solutions tailored to your business needs</p>
+        </div>
+        <div class="services-grid">
+            <!-- SEO Service -->
+            <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                <div class="featured-badge">Most Popular</div>
+                <div class="service-icon">
+                    <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h3>SEO Optimization</h3>
+                <p>Boost your online visibility and drive organic traffic with our comprehensive SEO strategies and optimization techniques.</p>
+                <ul class="service-features">
+                    <li>On-Page SEO</li>
+                    <li>Technical SEO</li>
+                    <li>Local SEO</li>
+                    <li>Content Strategy</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price-tag">Starting from ₹8,000/month</span>
+                    <a href="{% url 'seo_services' %}" class="service-btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Web Design Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom websites and full-stack solutions built with modern technologies for optimal performance and user experience.</p>
+                <ul class="service-features">
+                    <li>Responsive Design</li>
+                    <li>E-commerce Solutions</li>
+                    <li>CMS Development</li>
+                    <li>Full-Stack Applications</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price-tag">Starting from ₹15,000</span>
+                    <a href="{% url 'web_design' %}" class="service-btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Graphic Design Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="bi bi-palette"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Professional branding and visual design solutions to create a memorable brand identity that resonates with your audience.</p>
+                <ul class="service-features">
+                    <li>Logo Design</li>
+                    <li>Brand Identity</li>
+                    <li>Social Media Graphics</li>
+                    <li>Print Design</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price-tag">Starting from ₹2,500</span>
+                    <a href="{% url 'graphic_design' %}" class="service-btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Text to Audio Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="bi bi-mic"></i>
+                </div>
+                <h3>Text to Audio Conversion</h3>
+                <p>Natural, clear voiceovers for content, apps, and branding with studio-quality text-to-speech technology.</p>
+                <ul class="service-features">
+                    <li>Studio-quality text-to-speech</li>
+                    <li>Multiple voice styles & languages</li>
+                    <li>Ideal for podcasts & e-learning</li>
+                    <li>Video narration</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price-tag">Starting from ₹500</span>
+                    <a href="{% url 'text_to_audio' %}" class="service-btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Audio Editing Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-icon">
+                    <i class="bi bi-headphones"></i>
+                </div>
+                <h3>Audio Editing</h3>
+                <p>Crisp, clean & polished sound for any project with professional noise reduction and mastering.</p>
+                <ul class="service-features">
+                    <li>Noise reduction & mastering</li>
+                    <li>Podcast & voiceover cleanup</li>
+                    <li>Background music integration</li>
+                    <li>Sound effects & transitions</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price-tag">Starting from ₹1,000</span>
+                    <a href="{% url 'audio_editing' %}" class="service-btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Video Editing Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-icon">
+                    <i class="bi bi-camera-video"></i>
+                </div>
+                <h3>Video Editing</h3>
+                <p>Engaging visuals for social media, ads & courses with professional cuts, transitions, and effects.</p>
+                <ul class="service-features">
+                    <li>Professional cuts & transitions</li>
+                    <li>Captions & effects</li>
+                    <li>Intro/outro animations</li>
+                    <li>YouTube & Instagram Reels</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price-tag">Starting from ₹1,500</span>
+                    <a href="{% url 'video_editing' %}" class="service-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block c3 %}
+<!-- Why Choose Us Section -->
+<section class="why-choose-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="why-choose-content">
+                    <h2>Why Choose Vedmata Web Designing?</h2>
+                    <p>We combine creativity, technology, and strategy to deliver exceptional digital solutions that drive results.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Expert Team</h4>
+                                <p>Experienced professionals with proven track record</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-lightning"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Fast Delivery</h4>
+                                <p>Quick turnaround without compromising quality</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>24/7 Support</h4>
+                                <p>Ongoing support and maintenance services</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-currency-rupee"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Affordable Pricing</h4>
+                                <p>Competitive rates with transparent pricing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block c4 %}
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Process</h2>
+            <p>Simple, transparent, and effective approach to deliver exceptional results</p>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Consultation</h3>
+                    <p>We understand your requirements and business goals</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Strategy</h3>
+                    <p>Develop a customized plan tailored to your needs</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Design & Development</h3>
+                    <p>Create and build your solution with attention to detail</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Launch & Support</h3>
+                    <p>Deploy your project and provide ongoing support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's discuss your project and create something amazing together</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn-primary">Get Started</a>
+                <a href="tel:+91-9506933715" class="btn-secondary">
+                    <i class="bi bi-telephone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+</script>
+{% endblock %}

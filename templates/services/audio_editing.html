@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Audio Editing Services | Professional Sound Enhancement{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/services_enhanced.css' %}">
+{% endblock %}
+
+{% block c1 %}
+<section class="vedmata-container vedmata-my-5">
+    <h1 class="vedmata-text-center">🎧 Audio Editing Services</h1>
+    <p class="vedmata-text-center">Crisp, Clean & Polished Sound for Any Project</p>
+</section>
+{% endblock %}
+
+{% block c2 %}
+<section class="vedmata-container vedmata-my-5">
+    <div class="service-highlight-card">
+        <h2 class="vedmata-text-center">Professional Audio Enhancement</h2>
+        <p>Transform your raw audio into professional-quality sound with our comprehensive audio editing services. Perfect for podcasts, music, voiceovers, and video content.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h3>🎯 Our Services:</h3>
+                <ul class="vedmata-list">
+                    <li>Noise reduction & cleanup</li>
+                    <li>Audio mastering & enhancement</li>
+                    <li>Podcast editing & production</li>
+                    <li>Voiceover post-production</li>
+                    <li>Music mixing & editing</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>🎯 What We Include:</h3>
+                <ul class="vedmata-list">
+                    <li>Background music integration</li>
+                    <li>Sound effects & transitions</li>
+                    <li>Volume leveling & EQ</li>
+                    <li>Audio synchronization</li>
+                    <li>Format conversion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vedmata-container vedmata-my-5">
+    <h2>🎵 Specialized Audio Services</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Podcast Production</h3>
+                <ul class="vedmata-list">
+                    <li>Multi-track editing</li>
+                    <li>Intro/outro integration</li>
+                    <li>Sponsor ad insertion</li>
+                    <li>Chapter markers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Music Enhancement</h3>
+                <ul class="vedmata-list">
+                    <li>Mixing & mastering</li>
+                    <li>Instrument isolation</li>
+                    <li>Vocal enhancement</li>
+                    <li>Audio restoration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Video Audio</h3>
+                <ul class="vedmata-list">
+                    <li>Dialogue cleanup</li>
+                    <li>Background score</li>
+                    <li>Sound effects sync</li>
+                    <li>Audio-video matching</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block c3 %}
+<section class="vedmata-container vedmata-my-5">
+    <h2>💰 Pricing Structure</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Basic Editing</h3>
+                <p><strong>₹1,000</strong> per hour of audio</p>
+                <ul class="vedmata-list">
+                    <li>Noise reduction</li>
+                    <li>Basic cleanup</li>
+                    <li>Volume adjustment</li>
+                    <li>Format conversion</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Professional</h3>
+                <p><strong>₹2,000</strong> per hour of audio</p>
+                <ul class="vedmata-list">
+                    <li>Advanced noise reduction</li>
+                    <li>EQ & compression</li>
+                    <li>Music integration</li>
+                    <li>Sound effects</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-highlight-card">
+                <h3>Premium</h3>
+                <p><strong>₹3,500</strong> per hour of audio</p>
+                <ul class="vedmata-list">
+                    <li>Full production suite</li>
+                    <li>Multi-track mixing</li>
+                    <li>Mastering included</li>
+                    <li>Unlimited revisions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block c4 %}
+<section class="vedmata-container vedmata-my-5">
+    <div class="contact-highlight">
+        <h2>🎧 Ready to Enhance Your Audio?</h2>
+        <p>Get professional audio editing that makes your content sound amazing!</p>
+        <div class="contact-info">
+            <a href="/contact" class="contact-item">
+                <i class="bi bi-envelope"></i> Get Free Quote
+            </a>
+            <a href="tel:+91-9506933715" class="contact-item">
+                <i class="bi bi-telephone"></i> Call Now
+            </a>
+            <a href="https://wa.me/919506933715" class="contact-item">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="faq-container">
+        <h2 class="faq-heading">Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-toggle">
+            <label for="faq1" class="faq-title">What audio formats do you work with?</label>
+            <div class="faq-content">We work with all major audio formats including MP3, WAV, FLAC, M4A, and more.</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-toggle">
+            <label for="faq2" class="faq-title">How long does audio editing take?</label>
+            <div class="faq-content">Turnaround time is typically 2-5 business days depending on the complexity and length of the audio.</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-toggle">
+            <label for="faq3" class="faq-title">Do you provide sample edits?</label>
+            <div class="faq-content">Yes, we can provide a short sample edit to demonstrate our quality before you commit to the full project.</div>
+        </div>
+    </div>
+</section>
+{% endblock %}
